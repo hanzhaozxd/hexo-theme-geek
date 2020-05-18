@@ -1,22 +1,18 @@
-logo_title: GEEK 三斤
+logo_title: Jason han
 
 style: black
 
-favicon: /favicon.ico
+favicon:
 
 menu:
-  作品: /project
-  域名: /domain
-  友联: /links
-  关于: /about
-  Github: https://github.com/sanjinhub
+  '@Me': /me
 
 # 做了域名限制，请改成自己的 KEY
 # 若关闭valine 设置enable为false
 valine:
   enable: true
-  appId: CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz
-  appKey: FqiyUqbg7McKN2eG0MCewupf
+  appId: WfUfF6fOXFMYXSDJIUzBR2dV-gzGzoHsz
+  appKey: dXLhdTQPQYbUGkswsVg5Es2V
 
 highlight:
   enable: false

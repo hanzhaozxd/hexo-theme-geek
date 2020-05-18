@@ -5,12 +5,24 @@
 <%- partial('_partial/nav') %>
 <div class="hd">
     <% var last; %>
+    <% var last_month; %>
     <% page.posts.each(function (post) { %>
-        <% var year = post.date.year(); %>
+        <% var year = full_date(post.date, 'Y'); %>
+        <% var month = full_date(post.date, 'MM'); %>
         <% if (last != year){ %>
             <div class="titlex">
-                <p><span class="jing">#</span>
+                <p>
+                    <span class="jing">#</span>
                     <%= year %>
+                </p>
+            </div>
+            <% last = year; %>
+        <% } %>
+        <% if(last_month != month){%>
+            <% last_month = month; %>
+            <div class="titlex" style="font-size:14px;padding-left:2em;">
+                <p>
+                    <%= month %>
                 </p>
             </div>
             <% last = year; %>
